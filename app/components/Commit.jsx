@@ -7,8 +7,8 @@ export default function Commits({ data}) {
             {data ? data.map((item) => {
                 return (
                     <div key={item.sha}>
-                        <div>{item.created_at}</div>
-                        <div>{item.environment}</div>
+                        <div>{item.commit.author.name}</div>
+                        <div>{item.commit.mesagge}</div>
                     </div>
                 )
             }) : <div>loading...</div>
