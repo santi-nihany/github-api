@@ -12,5 +12,5 @@ export default async function getRepo(user, repo) {
   });
 
   // console.log(res.data);
-  return res.data;
+  return res.data.slice(0, 5);
 }
