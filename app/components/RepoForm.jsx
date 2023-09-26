@@ -84,7 +84,6 @@ export function RepoForm() {
   });
   // 2. Define a submit handler.
   async function onSubmit(values) {
-    console.log(values);
     let user;
     let repo;
     if (values.link) {
@@ -93,8 +92,6 @@ export function RepoForm() {
       if (match && match.length === 3) {
         user = match[1];
         repo = match[2];
-        console.log("Username:", user);
-        console.log("Repo:", repo);
       } else {
         console.log("Invalid URL format");
       }

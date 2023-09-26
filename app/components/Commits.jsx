@@ -7,7 +7,6 @@ import {
 import Image from "next/image";
 
 export default function Commits({ data, user, repo, goal, description }) {
-  console.log(data);
   return (
     <div className=" w-[24rem] space-y-4 border rounded-2xl h-fit p-4">
       <h1 className="text-2xl text-center font-semibold">{goal}</h1>
@@ -63,10 +62,6 @@ export default function Commits({ data, user, repo, goal, description }) {
           </div>
         </CollapsibleContent>
       </Collapsible>
-      {/* <h3 className="text-center self-center text-xl font-bold">
-        {" "}
-        Commit log{" "}
-      </h3> */}
     </div>
   );
 }
